@@ -23,3 +23,8 @@ p {
 	font-size:60px;
 	font-family:'Dongle';
 }
+
+.bold2 {
+	font-weight: bold;
+	font-size: 90px;
+}
