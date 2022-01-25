@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+h1 {
+	background-color: darkblue;
+	margin: 55px;
+	display: inline;
+}
+
+p {
+	margin: 110px;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.bold {
+	font-weight: bold;
+	font-size:60px;
+	font-family:'Dongle';
+}
