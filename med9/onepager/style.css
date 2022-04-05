@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+:root {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 2px;
+}
+
+nav {
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 45px;
+	position: fixed;
+	width: 100%;
+	box-sizing: border box;
+}
+
+nav img {
+	height: 70px;
+	border-radius: 60%;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+}
+
+ul li a {
+	margin: 30px;
+	padding: 25px;
+	text-decoration: none;
+	color: red;
+	background-color: white;
+	border-radius: 20px;
+	font-family: "Rubic Wet Paint";
+	font-size: 25px;
+}
+
+ul li a:hover {
+	background-color: cyan;
+	color: white;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("header.jpg");
+	background-size: cover;
+	height: 500px;
+}
+
+section {
+	padding: 100px;
+}
+
+#link1 {
+	background-color: red;
+}
+
+#link2 {
+	background-color: white;
+}
+
+#link3 {
+	background-color: lightblue;
+}
