@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+article {
+	width: 1500px;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+#image {
+	background-image: url(berlin.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	height: 50%;
+}
+
+#color {
+	background: linear-gradient(90deg, rgba(103,183,30,1) 3%, rgba(99,106,55,1) 34%, rgba(4,68,255,1) 70%, rgba(0,212,255,1) 100%);
+	background-position: right;
+	background-size: cover;
+	width: 50%;
+	height: 50%;
+	position: relative;
+}
+
+h1 {
+	background-color: white;
+	color: darkblue;
+	height: 70px;
+	width: 220px;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: "Lato";
+	font-weight: bold;
+	position: absolute;
+	left: 150px;
+	top: 110px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+p {
+	background-color: darkblue;
+	color: white;
+	width: 400px;
+	height: 50px;
+	font-size: 30px;
+	font-family: "Source Sans Pro";
+	position: absolute;
+	right: 400px;
+	top: 50px;
+	padding: 10px;
+	z-index: 1;
+}
