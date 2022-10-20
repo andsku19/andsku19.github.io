@@ -1,0 +1,90 @@
+/*Padding werden zur angegebenen Breite hinzugezält
+Somit ergibt sich ein Wert von über 100%. Nav, article und aside erscheinen dadurch nicht nebeneinander.
+Box-sizing: border-box ... Größenangaben umfassen das gesamte Element*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*Lange Wörter werden in nächsten Zeile weitergeführt, wenn sie über den jewiligen Container hinausreigen.*/
+	word-wrap: break-word;
+	
+}
+
+nav, header, article, aside {
+	width: 100%;
+}
+
+/*Design Smartphone*/
+header {
+	padding: 25px;
+	background-color: lightgrey;
+}
+
+nav {
+	padding: 25px;
+	background-color: red;
+	
+}
+
+article {
+	padding: 25px;
+	background-color: yellow;
+	
+}
+
+aside {
+	padding: 25px;
+	background-color: lightblue;
+	
+}
+
+li {
+	display: inline;
+}
+
+/*Design Tablet: 600px*/
+@media (min-width: 600px) {
+	li {
+		display: inline;
+	}
+
+	article {
+		width: 60%;
+		float: left;
+	}
+
+	aside {
+		width: 40%;
+		float: left;
+	}
+}
+
+
+
+/*Design Desktop*/
+/*768px: Trennung zw. Smartphone/Tablet und Desktop*/
+@media (min-width: 768px) {
+	li {
+		display: block;
+	}
+
+	nav {
+		width: 25%;
+		float: left;
+	}
+
+	article {
+		width: 50%;
+		float: left;
+	}
+
+	aside {
+		width: 25%;
+		float: left;
+	}
+
+	.container {
+	width: 70%;
+	margin: auto; /*Bereich wird mittig ausgerichtet.*/
+	}
+}
