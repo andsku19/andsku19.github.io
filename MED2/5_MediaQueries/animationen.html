@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid Animationen</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+		.container {
+			font-family: Rubik;
+			font-size: 20px;
+			height: 100vh;
+			width: 100vw;
+			display: grid;
+			grid-template-columns: 20vh 1fr 20vh;
+			grid-template-rows: 10vh 1fr 1fr 10vh;
+		}
+
+		.rs7 {
+			height: 85vh;
+			width: 10.5vw;
+		}
+
+		.benz {
+			height: 85vh;
+			width: 80vw;
+		}
+
+		.rolls {
+			height: 40vh;
+			width: 10.3vw;
+		}
+
+		.lambo {
+			height: 40vh;
+			width: 10.3vw;
+		}
+
+		nav, main, aside, footer {
+			border: 2px solid black;
+		}
+
+		nav {
+			grid-column: 1/2;
+			grid-row: 2/4;
+		}
+
+
+		main {
+			grid-column: 2/3;
+			grid-row: 2/4;
+		}
+
+		header {
+			animation: Andri 3s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: forward;
+			animation-direction: alternate;
+			background-color: grey;
+			grid-column: 1/4;
+			grid-row: 1/2;
+		}
+		
+
+		footer {
+			animation: Andri 3s;
+			animation-iteration-count: infinite;
+			animation-fill-mode: forward;
+			animation-direction: alternate;
+			background-color: grey;
+			grid-column: 1/4;
+		}
+
+		@keyframes Andri{
+			0%{width: 0;}
+			50%{width: 25%;}
+			75%{width: 50%;}
+			85%{width: 75%;}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<header>Mein lieblings Autos</header>
+		<nav><img class="rs7" src="audi.jpg" alt="Audi"></nav>
+		<main><img class="benz" src="Mercedes-Benz.jpg" alt="Mercedes-Benz"></main>
+		<aside class="aside1"><img class="rolls" src="Rolls Royce.jpg" alt="Rolls Royce"></aside>
+		<aside class="aside2"><img class="lambo" src="lamborghini.jpg" alt="Lamborghini"></aside>
+		<footer>Von diese Autos meine lieblings ist Audi</footer>
+	</div>
+
+</body>
+</html>
